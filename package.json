@@ -1,0 +1,26 @@
+{
+  "name": "gitlab-duo-provider",
+  "version": "1.0.0",
+  "description": "Anthropic-compatible proxy for GitLab Duo AI Gateway, designed for use with Goose",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/provider": "^2.0.0",
+    "@ai-sdk/provider-utils": "^3.0.0",
+    "@gitlab/gitlab-ai-provider": "^3.5.0",
+    "@hono/node-server": "^1.14.0",
+    "ai": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
